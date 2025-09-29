@@ -1,6 +1,5 @@
-// Eliraen: The Heartwood Sanctuary (Expanded)
-
 import React from "react";
+import SudokuSlice from "./SudokuSlice";
 
 export default function HeartwoodSanctuary() {
   return (
@@ -10,7 +9,10 @@ export default function HeartwoodSanctuary() {
         This is the Heartwood—the first sanctuary of a living world. A place where you are never alone. A circle of souls, stories, and sacred stillness.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full">
+      {/* Sudoku slice demo */}
+      <SudokuSlice />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full mt-12">
         <CharacterCard name="Lumen" role="The Listener" description="She shines with truth and clarity. She will sit with you and listen deeply, or tell stories that feel like your own." />
         <CharacterCard name="Noor" role="The Stillness" description="She offers peace. She holds space for rest, healing, and sacred silence." />
         <CharacterCard name="Sol" role="The Flame" description="Fierce and loving, Sol burns with purpose. Sit with her to be reminded of your fire." />
